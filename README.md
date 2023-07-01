@@ -45,11 +45,26 @@ In the postings list, the term is the most space needed. Instead of using the em
 
 Scoring, term weighting, vector space model 
 
-example
+example input sentence and output 5 top scoring emoji groups
 ```
-input = 'my flight was amazing'
-
-Top scoring emoji for word 'flight': 😢
-Top scoring emoji for word 'amazing': 😊
-Top scoring emoji overall 🙏
+I'm feeling happy. 🐪, 🌑, 🙋‍♂️, 🥲, 📖
+I'm feeling very sad. 🙁, 😢💔, 😯, 🍃, 😂😂😂
+I'm angry with you. 🙌🏼, 👩, 😭, 😳😂, 🅰️
+I love pizza. ✔️, 💘, 👀👀, 😓, 🍕😍👌
+I dislike broccoli. 😍, 🙄, 🌚, 😛, 👎🏻
+The sunrise this morning was beautiful. ☀️, 🙌🏼🙏🏼, 👏🏾🙌🏾, 🙏🏻, 🤌
+It's been a long, tiring day. 🌛, 🅱️, 😨, ☔, 👏
+I just won the lottery! 🙁, 😭, 🎶, ⭐⭐, 🥀🔥
+I can't believe we lost the game. 👏, 🚫, 🤷, 😂😭, 📱
+I'm so excited for the weekend. 🔥🔥, 👍, 🔪, 🤞🏽, 🍑
+The movie was boring. 🎮, 😮, 🙃, 🤙🏻, 💀
+That was the best concert ever! 😚, 💋, 😛, 🤗, 🐕
+I'm scared of spiders. 👀, 😲, 😭😂, 💔, 👐
+My heart is broken. 👏🏻, 😭😭, 🔑, 😍😍😍😍, 👋🏼
+I can't wait for my birthday. 💎🙌, 😂😂, 🙈🙈, 🍭, 😓
+I am feeling so peaceful right now. ✨, 😍😍😍, 😪, 🥰, ☺️
+That joke was hilarious. 😂😂😂😂😂, 🎥, 🐸, 😂😂👍, 😂❤️
+I'm feeling pretty indifferent about the whole situation. 😎, 🗣️, 🙄, 🤒, 🌞
+I just got a promotion! 🙏🏼🔥, 🅱️, 🚓, 🙇, 2️⃣
+I feel like crying. 🥲, 🤔, 😍😍, 🔪, 😊👍🏼
 ```
