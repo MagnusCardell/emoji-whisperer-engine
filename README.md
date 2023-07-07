@@ -47,24 +47,32 @@ Scoring, term weighting, vector space model
 
 example input sentence and output 5 top scoring emoji groups
 ```
-I'm feeling happy. 🐪, 🌑, 🙋‍♂️, 🥲, 📖
-I'm feeling very sad. 🙁, 😢💔, 😯, 🍃, 😂😂😂
-I'm angry with you. 🙌🏼, 👩, 😭, 😳😂, 🅰️
-I love pizza. ✔️, 💘, 👀👀, 😓, 🍕😍👌
-I dislike broccoli. 😍, 🙄, 🌚, 😛, 👎🏻
-The sunrise this morning was beautiful. ☀️, 🙌🏼🙏🏼, 👏🏾🙌🏾, 🙏🏻, 🤌
-It's been a long, tiring day. 🌛, 🅱️, 😨, ☔, 👏
-I just won the lottery! 🙁, 😭, 🎶, ⭐⭐, 🥀🔥
-I can't believe we lost the game. 👏, 🚫, 🤷, 😂😭, 📱
-I'm so excited for the weekend. 🔥🔥, 👍, 🔪, 🤞🏽, 🍑
-The movie was boring. 🎮, 😮, 🙃, 🤙🏻, 💀
-That was the best concert ever! 😚, 💋, 😛, 🤗, 🐕
-I'm scared of spiders. 👀, 😲, 😭😂, 💔, 👐
-My heart is broken. 👏🏻, 😭😭, 🔑, 😍😍😍😍, 👋🏼
-I can't wait for my birthday. 💎🙌, 😂😂, 🙈🙈, 🍭, 😓
-I am feeling so peaceful right now. ✨, 😍😍😍, 😪, 🥰, ☺️
-That joke was hilarious. 😂😂😂😂😂, 🎥, 🐸, 😂😂👍, 😂❤️
-I'm feeling pretty indifferent about the whole situation. 😎, 🗣️, 🙄, 🤒, 🌞
-I just got a promotion! 🙏🏼🔥, 🅱️, 🚓, 🙇, 2️⃣
-I feel like crying. 🥲, 🤔, 😍😍, 🔪, 😊👍🏼
+Who else is excited for the new Avengers movie? #MarvelFan,"😙👌, ✨, 🤝, 😂🤣, 🤷‍♂️🙏"
+Can't believe how beautiful the sunset was today. #NaturePhotography,"💖, 😙👌🏼, 🔋, 😔🙏, 👌🏼👌🏼"
+Dinner at my favorite sushi place #Foodie,"😭, 🙌🙌🙌, 🤞🏽, 👏🏻, 👏"
+Throwback to my trip to Paris last summer #TravelDiaries,"😎🤙🏽, 🤘🏽, 🐝✊, 🙌🌅, 😎😂👍"
+Feeling so blessed to have such amazing people in my life #Blessed,"😂🙌🏼, 🔥, ❤️🙏🏾💯, 😐✋🏼, 🇸🇴"
+That was the best concert ever!,"😩👌, 👌🏽, 🤩🙌, 🤏🏼, 🤚🏼"
+I'm scared of spiders.,"🙈, ✨🤞🏼, 😔🤚, 😃👋, 😁✌️"
+My heart is broken.,"💙, ❤, 🍃, 🙏🏽😩, 🥰👍"
+I can't wait for my birthday.,"💎🙌, ✨, 💪🏾🔥, 🔥🔥🔥🙌🙌🙌, 🇬🇹"
+angry,"👺, 💢, 🗯, 😖, 😣"
+love,"🙏🏽😃, 💘, ♥, ❣, 🏩"
+hate,"👈🏽💯👁, 🙄👎🏼, 😈👌🏻🔥, ✋🏼🙄, 💪🏾💖"
+food,"🌭, 🌮, 🌯, 🌶, 🌽"
+hungry,"😭🖕, 😔🤚🏽, 😂😂😂😭, 😊👍👍❤️👍, 👍😭"
+tired,"😫, 🛀, 🛁, 🛏, 😪"
+excited,"🤑👏🏼👏🏼, 😭🙌🏻, 😩🙌🏼, 🤩🙌🏻👏🏻, 🤪🙌🏻"
+work,"👏🏼👍🏼, ⌨, 🏢, 💻, 💼"
+home,"🏴󠁧󠁢󠁥󠁮󠁧󠁿✌️, 👠👠👠, ✈️, 🏘, 🏠"
+play,"▶, 🎴, 😂😂😂👏🏽👏🏽👏🏽, 💯🙌🏽, 😎👍😂😂"
+game,"😎👍👍🇸🇻, ♠, ♣, ♥, ♦"
+sports,"⚽, ⚾, ⛷, ⛸, 🎱"
+music,"👏🏾👏🏾🥺, 🎙, 🎚, 🎛, 🎵"
+movie,"🎞, 🎟, 🎥, 🎦, 🎫"
+book,"📖, 📔, 📕, 📗, 📘"
+travel,"⛩, ⛰, ⛱, ⛲, ⛴"
+adventure,"🙏🏽🏈, 🙏🏾👍🏾😎, 🙌🙌🙌💙💙💙🔥🔥🔥, 😎🤙🏼, 😃🙏🏽"
+family,"👨‍👩‍👦, 👨‍👨‍👦, 👨‍👨‍👦‍👦, 👨‍👨‍👧, 👨‍👨‍👧‍👦"
+party,"🍷, 🍾, 🎁, 🎆, 🎇"
 ```
