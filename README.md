@@ -1,19 +1,7 @@
 ## Engine for the emoji whisperer npm package
 Building a search engine for emojis
 
-1. Index the corpus
-
-term - token
-
-term - emoji index. A sparse matrix with true/false if emoji appears with term
-inverted index - dictionary of terms, and a list of their appearances (emojis)
-
-Building index:
-1. collect documents (sentences with emojis)
-2. tokenize the documents
-3. preprocess the tokens. lowercase, cleanup, english
-4. Index documents with inverted index
-
+## Implementation
 The inverse word frequency ($iwf$) is calculated as:
 
 $$
@@ -50,6 +38,7 @@ $$
 \textit{{topEmojis}}(Q, W, n) = \textit{{top }} n \textit{{ emojis }} e \textit{{ sorted by }} \textit{{score}}(e, Q, W)
 $$
 
+## Results
 example input sentence and output 5 top scoring emoji groups
 ```
 Who else is excited for the new Avengers movie? #MarvelFan,"😙👌, ✨, 🤝, 😂🤣, 🤷‍♂️🙏"
@@ -81,3 +70,10 @@ adventure,"🙏🏽🏈, 🙏🏾👍🏾😎, 🙌🙌🙌💙💙💙🔥🔥�
 family,"👨‍👩‍👦, 👨‍👨‍👦, 👨‍👨‍👦‍👦, 👨‍👨‍👧, 👨‍👨‍👧‍👦"
 party,"🍷, 🍾, 🎁, 🎆, 🎇"
 ```
+
+## Notes
+Building index:
+1. collect documents (sentences with emojis)
+2. tokenize the documents
+3. preprocess the tokens. lowercase, cleanup, english
+4. Index documents with inverted index
