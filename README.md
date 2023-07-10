@@ -14,36 +14,33 @@ Building index:
 3. preprocess the tokens. lowercase, cleanup, english
 4. Index documents with inverted index
 
-Each emoji has unique ID
-Maintain dictionary and postings
-dictionary - emoji and pointer to document its from
-postings - inverted index [emoji, frequency in doc, [docID1, docID2]]
+The inverse word frequency ($iwf$) is calculated as:
 
+$$
+iwf(e, W) = \log \frac{{|W|}}{{|\{w \in W: e \in w\}|}}$$
 
-Boolean query Happy AND Sad
-Answer set rank emojis that has both happy and sad, otherwise, happy then sad, depending on frequency. 
+where $|W|$ is the total number of words, and $|\{w \in W: e \in w\}|$
+is the number of words where the emoji $e$ appears.
 
-Tokenization
-- lowercase might be bad for emojis because we need to keep names apart from words (General Motors)
-- stemming and lemmatization - Porter algorithm
+The median frequency ($mf$) is the median distance between a word an the
+emoji. The median frequency ($mf$) is the median value of the emoji
+scores for a given word.
 
-Intersection algorithm for Happy and Sad is O(n+m) where n and m are number of occurrences 
+The emoji-word frequency ($ewf$) is calculated as:
 
-Tolerant retrieval
-Wildcard searches like re*val would need to use re AND val. for those searches, 
-k-gram index woudl help
-phonetic correction
-lehvenstein distance
+$$
+ewf(e, w) = \frac{{\textit{{count of emoji }} e \textit{{ for word }} w}}{{\textit{{total number of emojis}}}}$$
 
+where $f_{e, w}$ is the frequency of emoji $e$ given word $w$.
 
-Index compression
-Possibly 75% less storage
-Allow use of caching frequently used terms and 
-Rule of 30 - the 30 most common words account for 30% of the tokens in text. 
-In the postings list, the term is the most space needed. Instead of using the emoji, use a pointer to the emoji
+Finally, the score is computed as:
 
+$$
+score(e, w, W) = \frac{{iwf(e, W)}}{{mf + ewf(e, w)}}$$
 
-Scoring, term weighting, vector space model 
+$e$ corresponds to an emoji, $w$ corresponds to a word in the query, and
+$W$ corresponds to the entire corpus from which the index was built.
+
 
 example input sentence and output 5 top scoring emoji groups
 ```
