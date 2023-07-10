@@ -23,8 +23,7 @@ where $|W|$ is the total number of words, and $|\{w \in W: e \in w\}|$
 is the number of words where the emoji $e$ appears.
 
 The median frequency ($mf$) is the median distance between a word an the
-emoji. The median frequency ($mf$) is the median value of the emoji
-scores for a given word.
+emoji.
 
 The emoji-word frequency ($ewf$) is calculated as:
 
@@ -41,6 +40,15 @@ score(e, w, W) = \frac{{iwf(e, W)}}{{mf + ewf(e, w)}}$$
 $e$ corresponds to an emoji, $w$ corresponds to a word in the query, and
 $W$ corresponds to the entire corpus from which the index was built.
 
+Given an input quert $Q$, the resulting emoji is calculated as:
+
+$$
+score(e, Q, W) = \sum_{{w \in Q}} \frac{{\textit{{iwf}}(e, W)}}{{\textit{{mf}}_w + \textit{{ewf}}(e, w)}}
+$$
+
+$$
+\textit{{topEmojis}}(Q, W, n) = \textit{{top }} n \textit{{ emojis }} e \textit{{ sorted by }} \textit{{score}}(e, Q, W)
+$$
 
 example input sentence and output 5 top scoring emoji groups
 ```
