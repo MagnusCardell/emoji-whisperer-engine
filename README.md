@@ -28,7 +28,7 @@ score(e, w, W) = \frac{{iwf(e, W)}}{{mf + ewf(e, w)}}$$
 $e$ corresponds to an emoji, $w$ corresponds to a word in the query, and
 $W$ corresponds to the entire corpus from which the index was built.
 
-Given an input quert $Q$, the resulting emoji is calculated as:
+Given an input query $Q$, the resulting emoji is calculated as:
 
 $$
 score(e, Q, W) = \sum_{{w \in Q}} \frac{{\textit{{iwf}}(e, W)}}{{\textit{{mf}}_w + \textit{{ewf}}(e, w)}}
@@ -38,6 +38,7 @@ $$
 \textit{{topEmojis}}(Q, W, n) = \textit{{top }} n \textit{{ emojis }} e \textit{{ sorted by }} \textit{{score}}(e, Q, W)
 $$
 
+See repository https://github.com/MagnusCardell/emoji-whisperer for an implementation of index in node.js
 ## Results
 example input sentence and output 5 top scoring emoji groups
 ```
